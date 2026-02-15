@@ -16,6 +16,7 @@ import linux from "../assets/linux.png";
 import netlify from "../assets/netlify.png";
 import firebase from "../assets/firebase.png";
 import laravel from "../assets/laravel.png";
+import bookmarkPic from "../assets/smart-bookmark.png";
 
 
 // Importing Project Images
@@ -28,6 +29,7 @@ import music from "../assets/music.png";
 import attendanceImg from "../assets/folio.png";
 import weatherImg from "../assets/weather-report.png";
 import newp from "../assets/soumitra-port.png";
+import { link } from "framer-motion/client";
 
 
 
@@ -226,6 +228,7 @@ const projectData = [
     id: 1,
     imgsrc: clinicImg,
     title: "Doctor’s Clinic Portal",
+    link:"https://cladentapp.netlify.app/",
     details:
       "A full stack web application built for a real dental clinic to manage appointments, lab reports, and patient history. It handles 500+ monthly patient interactions, automates scheduling, and provides doctors with analytics for smarter clinical decisions.",
     github: "",
@@ -235,6 +238,7 @@ const projectData = [
     id: 2,
     imgsrc: ecomImg,
     title: "NourishNow",
+    link:"#",
     details:
       "A full stack grocery e-commerce platform with product listings, shopping cart, checkout, and secure authentication via PHPMailer. Integrated payment APIs for 1,000+ orders and optimized database design for 10,000+ products, improving engagement and retention.",
     github: "https://github.com/Soumitra86707/NourishNow.git",
@@ -244,6 +248,7 @@ const projectData = [
     id: 3,
     imgsrc: newp,
     title: "Portfolio - Latest Technology",
+    link:"https://portfolio-soumitra.netlify.app/",
     details:
       "A modern portfolio built with React, Vite, Tailwind CSS, and Framer Motion. Features a sleek, responsive UI with smooth animations to showcase skills, projects, and achievements in an engaging and professional manner.",
     github: "https://github.com/",
@@ -252,10 +257,20 @@ const projectData = [
   {
     id: 4,
     imgsrc: weatherImg, // replace with your actual import
+    link:"https://soumitra86707.github.io/Weather-App/",
     title: "Weather View App",
     details:
       "A simple and interactive weather application built using HTML, CSS, JavaScript, and WeatherAPI. It displays real-time temperature, humidity, wind speed, and city-wise forecasts with a clean and user-friendly interface.",
     github: "https://github.com/Soumitra86707/Weather-App.git", // add your repo link if available
+  },
+  {
+    id: 5,
+    imgsrc: bookmarkPic, // replace with your actual import
+    link:"https://smart-bookmark-app-puce-three.vercel.app/",
+    title: "Smart bookmark Application ",
+    details:
+      "Built a real-time bookmark management web application using Next.js (App Router), Supabase (Auth, Database, Realtime), and Tailwind CSS with secure Google OAuth integration.",
+    github: "https://github.com/Soumitra86707/smart-bookmark-app.git", // add your repo link if available
   },
 ];
 

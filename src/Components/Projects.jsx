@@ -24,8 +24,9 @@ const Projectscards = (props) => {
         </div>
 
         <div className="flex flex-row space-x-1 items-center justify-between">
-          <h1 className="text-white uppercase text-base pl-5 py-2 font-semibold font">
+          <h1 className="text-white uppercase text-base pl-5 py-2 font-semibold cursor-pointer"><a href={props.link} target="_blank" rel="noopener noreferrer">
             {props.title}
+            </a>
           </h1>
 
           <div className="flex flex-row mx-auto py-2 gap-x-4 px-5">
@@ -119,6 +120,7 @@ const Projects = () => {
                         key={val.id}
                         id={index}
                         image={val.imgsrc}
+                        link={val.link}
                         title={val.title}
                         detail={val.details}
                         github={val.github}
